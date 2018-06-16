@@ -64,7 +64,7 @@ print ( disclaimer )
 print ( manifest)
 print ( menu)
 
-select = raw_input(' Select an option [1-14]: ')
+select = raw_input(' Select an option [ex. b1]: ')
 
 #b1. Download ADB & Fastboot
 if select == "b1":
