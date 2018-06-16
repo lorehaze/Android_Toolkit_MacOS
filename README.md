@@ -8,34 +8,34 @@ first, start a terminal and gain superuser powers by typing "sudo -s", then run 
 Once the script starts, you can select an option among:
 
       #-------------------------------------------#	
-      |		Base files			                        |
-      |						                                |
-      |	b1. Download ADB & Fastboot		            |
-      |						                                |
-      |		ADB				                              |
-      |						                                |
-      |	a1. Start ADB server			                |
-      |	a2. Stop ADB server			                  |
-      |	a3. Restart ADB server			              |
-      |	a4. Check device via ADB		              |
-      |	a5. Reboot device via ADB		              |
-      |	a6. Reboot into Fastboot via ADB	        |
-      |	a7. ADB Sideload			                    |
-      |	a8. Start ADB shell			                  |
-      |						                                |
-      |		Fastboot			                          |
-      | 					                                |
-      |	f1. Check device via fastboot		          |
-      |	f2. Unlock bootloader			                |
-      |	f3. Reboot to system via Fastboot	        |
-      |	f4. Flash stock ROM			                  |
-      |	f5. Check Bootloader status 		          |
-      |	f6. Flash custom recovery   		          |
-      |	f7. Boot custom recovery 		              |
-      |						                                |
-      |		Cleaner				                          |
-      | 					                                |
-      |	c1. Remve all the files used by this tool |
+      |		Base files			        |
+      |						        |
+      |	b1. Download ADB & Fastboot		  |
+      |						        |
+      |		ADB	                          |
+      |						        |
+      |	a1. Start ADB server	              |
+      |	a2. Stop ADB server                   |
+      |	a3. Restart ADB server	              |
+      |	a4. Check device via ADB              |
+      |	a5. Reboot device via ADB             |
+      |	a6. Reboot into Fastboot via ADB      |
+      |	a7. ADB Sideload	                    |
+      |	a8. Start ADB shell.                  |
+      |		                                |
+      |		Fastboot			        |
+      | 			                          |
+      |	f1. Check device via fastboot		  |
+      |	f2. Unlock bootloader	              |
+      |	f3. Reboot to system via Fastboot	  |
+      |	f4. Flash stock ROM	              |
+      |	f5. Check Bootloader status           |
+      |	f6. Flash custom recovery             |
+      |	f7. Boot custom recovery              |
+      |		                                |
+      |		Cleaner				  |
+      | 					              |
+      | c1. Remve all the files used by this tool |
       °-------------------------------------------°
       
       
