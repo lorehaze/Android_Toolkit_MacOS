@@ -11,6 +11,8 @@ os.system("clear")
 disclaimer = """
 			USE AT YOUR
 		         OWN RISK
+	
+	Make sure to run this script as superuser 
 	"""
 
 #manifest
