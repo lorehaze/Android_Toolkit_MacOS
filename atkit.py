@@ -1,51 +1,64 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 #import terminal command
 import os
 
+os.system("clear")	
+
+
+#disclaimer
+disclaimer = """
+			USE AT YOUR
+		         OWN RISK
+	"""
+
 #manifest
 manifest = """
-	Android Toolkit for MacOS.
+		Android Toolkit for MacOS.
 	 
-		Code by Lorehaze (xda)
+			Code by Lorehaze (xda)
 	
-	It's a simple python script 
-	to manipulate your Android.
+		It's a simple python script 
+		to manipulate your Android.
 	
 	"""
 
 #menu
-menu = """	
-		Base files
-
-	b1. Download ADB & Fastboot
-
-		ADB
-
-	a1. Start ADB server
-	a2. Stop ADB server
-	a3. Restart ADB server
-	a4. Check device via ADB
-	a5. Reboot device via ADB
-	a6. Reboot into Fastboot via ADB
-	a7. ADB Sideload
-	a8. Start ADB shell
-
-		Fastboot
-	
-	f1. Check device via fastboot
-	f2. Unlock bootloader
-	f3. Reboot to system via Fastboot
-	f4. Flash stock ROM
-	f5. Check Bootloader status
-	f6. Flash custom recovery
-	f7. Boot custom recovery
-	
-		Cleaner
-	
-	c1. Remve all the files used by this tool
+menu = """
+      #-------------------------------------------#	
+      |		Base files			  |
+      |						  |
+      |	b1. Download ADB & Fastboot		  |
+      |						  |
+      |		ADB				  |
+      |						  |
+      |	a1. Start ADB server			  |
+      |	a2. Stop ADB server			  |
+      |	a3. Restart ADB server			  |
+      |	a4. Check device via ADB		  |
+      |	a5. Reboot device via ADB		  |
+      |	a6. Reboot into Fastboot via ADB	  |
+      |	a7. ADB Sideload			  |
+      |	a8. Start ADB shell			  |
+      |						  |
+      |		Fastboot			  |
+      | 					  |
+      |	f1. Check device via fastboot		  |
+      |	f2. Unlock bootloader			  |
+      |	f3. Reboot to system via Fastboot	  |
+      |	f4. Flash stock ROM			  |
+      |	f5. Check Bootloader status 		  |
+      |	f6. Flash custom recovery   		  |
+      |	f7. Boot custom recovery 		  |
+      |						  |
+      |		Cleaner				  |
+      | 					  |
+      |	c1. Remve all the files used by this tool |
+      °-------------------------------------------°      
 	"""
 
+print ( disclaimer )
 print ( manifest)
 print ( menu)
 
@@ -144,6 +157,8 @@ if select == "c1":
 	print('\nThis will remove all the files and directory used by this script...')
 	question = raw_input('\nPress Enter key to continue, or Ctrl+C to stop the script...')
 	os.system("rm -rf tools os sideload recovery")
+	print('\n\nClean success!\nFiles: ')
+	os.system("ls")
 
 #f6. Flash custom recovery
 if select == "f6":
@@ -151,7 +166,7 @@ if select == "f6":
 	os.system("mkdir recovery && cp tools/* recovery/")
 	print('\nBe sure to put your recovery.img into the recovery folder that was just created.\nMake sure that your .img is the only recovery file in the directory.')
 	flashCR = raw_input('\nPress Enter key to continue, or Ctrl+C to stop the script...')
-	os.system("cp -R tools/* recovery/ && cd recovery && ./fastboot flash *.img")
+	os.system("cp -r tools/* recovery/ && cd recovery && ./fastboot flash *.img")
 
 #f7. Boot custom recovery
 if select == "f7":
@@ -159,5 +174,5 @@ if select == "f7":
 	print('recovery folder just created!')
 	print('\nBe sure to put your recovery.img into the recovery folder that was just created.\nMake sure that your .img is the only recovery file in the directory.')
 	bootCR = raw_input('\nPress Enter key to continue, or Ctrl+C to stop the script...')
-	os.system("cp -R tools/* recovery/ && cd recovery && ./fastboot boot *.img")
+	os.system("cp -r tools/* recovery/ && cd recovery && ./fastboot boot *.img")
 
