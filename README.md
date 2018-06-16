@@ -6,6 +6,7 @@ HOW TO USE:
 first, start a terminal and gain superuser powers by typing "sudo -s", then run the script with "./atkit.py" or "python atkit.py" or also "sudo python atkit.py".
 
 Once the script starts, you can select an option among:
+
 #-------------------------------------------#	
 |		Base files			        |
 |						        |
